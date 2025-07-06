@@ -1,0 +1,138 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f7fa;
+    color: #333;
+    padding: 20px;
+  }
+  
+  a {
+    color: #0077cc;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Header */
+  header {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #0077cc;
+    color: white;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  header .tagline {
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+  
+  /* Sections */
+  section {
+    margin: 40px 0;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  }
+  
+  section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #0077cc;
+    padding-bottom: 10px;
+    color: #0077cc;
+  }
+  
+  /* About Me */
+  #about {
+    text-align: center;
+  }
+  
+  #about img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+  }
+  
+  /* Skills */
+  #skills ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 10px;
+  }
+  
+  #skills li {
+    background: #eef3f8;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  /* Projects */
+  .project-card {
+    margin-bottom: 30px;
+  }
+  
+  .project-card img {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  }
+  
+  /* Resume */
+  #resume a {
+    font-weight: bold;
+    color: #0077cc;
+  }
+  
+  /* Contact */
+  #contact ul {
+    list-style: none;
+    padding: 0;
+    line-height: 2;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    color: #555;
+    font-size: 0.9rem;
+    border-top: 1px solid #ddd;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2rem;
+    }
+  
+    section {
+      padding: 15px;
+    }
+  
+    #skills ul {
+      grid-template-columns: 1fr;
+    }
+  }
+  

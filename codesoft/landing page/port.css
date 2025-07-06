@@ -1,0 +1,111 @@
+/* 🖤 Global & variables */
+:root {
+    --primary: #7f5af0;
+    --primary-dark: #6a3ed3;
+    --bg: #f5f6fa;
+    --card-bg: rgba(255,255,255,0.7);
+    --text: #333;
+    --radius: 8px;
+    --transition: 0.3s ease;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text);
+    background: linear-gradient(135deg, #fdfbfb, #ebedee);
+    margin: 0; padding: 0;
+    line-height: 1.6;
+  }
+  
+  /* Header with gradient overlay */
+  header {
+    background: linear-gradient(120deg, var(--primary), var(--primary-dark));
+    color: white; text-align: center;
+    padding: 3rem 1rem;
+  }
+  
+  header h1 { margin: 0; font-size: 2.5rem; }
+  header p.tagline {
+    font-size: 1.2rem;
+    opacity: .9;
+  }
+  
+  /* Section containers */
+  section {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+  
+  /* Glassmorphism card style */
+  .project-card {
+    background: var(--card-bg);
+    backdrop-filter: blur(10px);
+    border-radius: var(--radius);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    transition: transform var(--transition), box-shadow var(--transition);
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+  }
+  
+  /* Images */
+  img {
+    max-width: 100%;
+    border-radius: var(--radius);
+    transition: opacity var(--transition);
+  }
+  
+  img:hover {
+    opacity: 0.9;
+  }
+  
+  /* Skill list */
+  #skills ul {
+    display: flex; flex-wrap: wrap;
+    gap: .75rem;
+    list-style: none; padding: 0;
+  }
+  
+  #skills li {
+    background: var(--primary);
+    color: white;
+    padding: .5rem 1rem;
+    border-radius: var(--radius);
+    font-size: .9rem;
+    transition: background var(--transition);
+  }
+  
+  #skills li:hover {
+    background: var(--primary-dark);
+  }
+  
+  /* Links & buttons */
+  a, a.button {
+    color: var(--primary);
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-color var(--transition);
+  }
+  
+  a:hover, a.button:hover {
+    border-bottom: 2px solid var(--primary-dark);
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    color: #666;
+    font-size: .9rem;
+  }
+  
+  /* 📱 Responsive tweaks */
+  @media (max-width: 600px) {
+    header h1 { font-size: 2rem; }
+    .project-card { padding: 1rem; }
+  }

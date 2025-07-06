@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>calculation</title>
+    </head>
+       <style>
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding:0;
+            background-color: rgb(102, 224, 240);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height:100vh;
+            backdrop-filter: 15px;
+        }
+        h1{
+            color: black;
+            margin-bottom: 20px;
+        }
+        label{
+            font-size: 23px;
+            margin-right:20px;
+        }
+        input[type="number"]{
+                width: 100%;
+                padding: 20px;
+                margin-bottom: 12px;
+                border: black;
+                border-radius: 4px;
+                font-size: 16px;
+                box-sizing: border-box;
+            }
+        button{
+            background-color:red;
+            color:bisque;
+            border-radius:23px;
+            height:50px;
+            width:100px;
+            cursor:pointer;
+            margin-left: 90px ;
+        }
+        button:hover{
+            background-color: blue;
+        }
+        
+
+
+    
+
+
+        </style>
+        <body>
+        
+            
+        <form>
+            <center>
+        <h1>MARK SHEET</h1>
+            </center>
+        <label>English:</label>
+        <input type="number" id="english"><br>
+        <label>Tamil:</label>
+        <input type="number" id="tamil"><br>
+        <label>Maths:</label>
+        <input type="number" id="maths"><br>
+        <label>Science:</label>
+        <input type="number" id="science"><br>
+        <label>Social:</label>
+        <input type="number" id="social"><br>
+        <label>Total:</label>
+        <input type="number" id="Total" ><br>
+        <label>Average:</label>
+        <input type="number" id="Average"><br>
+        <label>Grand Total:</label>
+        <input type="number" id="GrandTotal"></br>
+        <button type="button" onclick="calculatemark()">Calculate</button>
+        </form>
+        
+
+        <script>
+            function calculatemark() {
+                const english = document.getElementById("english").value;
+                const tamil=document.getElementById("tamil").value;
+                const maths = document.getElementById("maths").value;
+                const science = document.getElementById("science").value;
+                const social = document.getElementById("social").value;
+
+                // Calculate total
+                const total = english + tamil + maths + science + social;
+                document.getElementById("Total").value = total;
+
+                // Calculate average
+                const average = total / 5;
+                document.getElementById("Average").value = average;
+                document.getElementById("GrandTotal").value = total;
+            }
+        </script>
+    </body>
+</html>
